@@ -8,13 +8,13 @@ const ColumnForm = props => {
   const [title, setTitle] = useState('');
   const [icon, setIcon] = useState('');
 
-  const handleSubmit = e => { 
-    e.preventDefault(); 
-    props.action({ title: title, icon: icon }); 
+  const handleSubmit = e => {
+    e.preventDefault();
+    props.action({ title: title, icon: icon }); /* Nie rozumiem tej konstrukcji */
     setTitle('');
     setIcon('');
   };
-  
+
 
   return (
     <form className={styles.columnForm} onSubmit={handleSubmit}>
