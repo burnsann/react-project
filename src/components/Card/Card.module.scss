@@ -11,3 +11,16 @@
     justify-content: space-between; 
     font-weight: bold;
 }
+
+.star, .trash {
+    border: none;
+    background-color: inherit;
+    i {
+        font-size: 21px;
+        cursor: pointer;
+    }
+}
+
+.favorite {
+    color: $color-warning;
+}
